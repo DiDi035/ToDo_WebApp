@@ -1,0 +1,37 @@
+.todoItemContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.todoItemContainer p {
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+.todoItemBtn {
+  border: 1px black solid;
+  background-color: #f8f5f1;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem;
+}
+
+.todoItemBtn:focus {
+  outline: none;
+}
+
+.doneBtn:hover {
+  cursor: pointer;
+  background: #343f56;
+  color: #f8f5f1;
+  transition: background 0.5s ease;
+}
+
+.removeBtn:hover {
+  cursor: pointer;
+  background: #e9896a;
+  color: #f8f5f1;
+  transition: background 0.5s ease;
+}

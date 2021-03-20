@@ -1,0 +1,18 @@
+.header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 3rem;
+}
+
+.header h1 {
+  font-size: 4rem;
+}
+
+.italic {
+    color: #e9896a;
+    font-style: italic;
+}
+.quote {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+}
