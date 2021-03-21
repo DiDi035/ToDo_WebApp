@@ -11,6 +11,14 @@
   width: 100%;
 }
 
+.isDoneItem {
+  background-color: gray;
+}
+
+.isDoneBtn {
+  background-color: gray;
+}
+
 .todoItemBtn {
   border: 1px black solid;
   background-color: #f8f5f1;

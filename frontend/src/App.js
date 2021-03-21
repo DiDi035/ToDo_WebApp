@@ -24,9 +24,16 @@ function App() {
   };
   const createToDo = async (text) => {
     const res = await axios.post(DOMAIN + PORT, { mess: text });
-    console.log(res.data)
     setItems(res.data);
   };
+  const removeItem = async (clickedID) => {
+    const res = await axios.put(DOMAIN + PORT + "/remove", { clickedID });
+    setItems(res.data);
+  }
+  const doneItem = async (clickedID) => {
+    const res = await axios.put(DOMAIN + PORT + "/done", { clickedID });
+    setItems(res.data);
+  }
   if (isLoading) {
     return <Preloader />;
   }
@@ -34,7 +41,7 @@ function App() {
     <div className="container">
       <Header />
       <ToDoInput createToDo={createToDo} />
-      <TodosList todos={items} />
+      <TodosList removeItem={removeItem} doneItem={doneItem} todos={items} />
     </div>
   );
 }
